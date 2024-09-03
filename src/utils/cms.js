@@ -31,7 +31,7 @@ export class StoryblokCMS {
         "cdn/stories/config",
         this.getDefaultSBParams()
       );
-      return data?.story;
+      return data?.story?.content || {};
     } catch (error) {
       console.log("CONFIG ERROR", error);
       return {};
