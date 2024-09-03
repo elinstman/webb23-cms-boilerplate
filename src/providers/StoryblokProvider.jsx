@@ -9,13 +9,15 @@ import Teaser from "@/components/nestable/Teaser";
 import RichTextDefault from "@/components/nestable/RichText";
 import Hero from "@/components/nestable/Hero";
 import Header from "@/components/nestable/Header";
+import Grid from "@/components/nestable/Grid";
 
 const components = {
   "page": Page,
   "teaser":Teaser,
   "richtext": RichTextDefault,
   "hero": Hero, 
-  "header": Header
+  "header": Header,
+  "grid": Grid
 }
 
 storyblokInit({

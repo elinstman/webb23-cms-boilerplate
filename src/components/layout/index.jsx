@@ -8,7 +8,7 @@ export default function Layout({ config, children }) {
     return (
         <>
             <Header blok={config} />
-            <main>{children}</main>
+            <main className="container mx-auto px-4">{children}</main>
             <footer></footer>
     </>
     );

@@ -1,9 +1,29 @@
 export default function Hero({ blok }) {
     return (
-        <section className="flex items-center justify-center w-full min-h-screen p-8">
+        <section className="flex items-center justify-center w-full min-h-screen p-5 md:min-h-[70vh] lg:min-h-[60vh]">
             <div className="flex flex-col md:flex-row items-center max-w-5xl w-full">
+                
+
                 {/* Text container */}
                 <div className="flex flex-col items-start w-full md:w-1/2 space-y-4">
+                     {/* Links container */}
+            {blok?.link && blok.link.length > 0 && (
+                <div className="mt-8 w-full max-w-5xl">
+                    <div className="flex flex-wrap items-start gap-4">
+                        {blok.link.map((link) => (
+                            <a 
+                                key={link._uid}
+                                href={link.link.url || '#'}
+                                title={link.linkName || 'Link'}
+                                className="inline-block px-4 py-2 text-gray-800 rounded hover:text-black transition-transform transform hover:scale-105"
+                            >
+                                {link.linkName || 'Link Name'}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
+
                     <h1 className="text-4xl font-bold text-black">{blok?.title || 'Default Title'}</h1>
                     <p className="text-lg text-black">{blok?.description || 'Default description text.'}</p>
                     {blok?.button && (
