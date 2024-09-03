@@ -16,4 +16,6 @@ export default async function StartPage({}) {
     notFound();
   }
 }
-export const dynamic = StoryblokCMS.isDevelopment ? "force-dynamic" : "force-static";
+export const dynamic = StoryblokCMS.isDevelopment
+  ? "force-dynamic"
+  : "force-static";

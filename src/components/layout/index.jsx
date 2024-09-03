@@ -4,9 +4,9 @@ export default function Layout({ config, children }) {
     //Use console.log to determine blok object structure if unsure...
     return (
         <>
-            <header></header>
+        <header></header>
             <main>{children}</main>
             <footer></footer>
-        </>
+    </>
     );
 }
