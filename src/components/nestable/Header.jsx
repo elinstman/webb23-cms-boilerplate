@@ -13,7 +13,7 @@ export default function Header({ blok }) {
                 {/* Logo */}
                 <div className="flex items-center">
                     <img src={blok?.logo?.filename} alt={blok?.logo?.alt || 'Logo'} className="h-10"/>
-                    <span className="ml-2 text-xl font-bold">{blok?.logoText || 'Default Logo Text'}</span>
+                    <span className="ml-2 text-xl hidden sm:inline font-bold">{blok?.logoText || 'Default Logo Text'}</span>
                 </div>
                 {/* Navigation Links */}
                 <nav className="flex space-x-4">
