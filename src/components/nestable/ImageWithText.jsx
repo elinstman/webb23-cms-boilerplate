@@ -26,7 +26,7 @@ export default function ImageWithText( { blok }) {
                     <img 
                         src={blok?.image?.filename} 
                         alt={blok?.image?.alt || 'Image description'} 
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto max-h-[400px] object-cover"
                     />
                 </div>
             </div>
