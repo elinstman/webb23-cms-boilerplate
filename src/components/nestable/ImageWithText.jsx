@@ -11,7 +11,7 @@ export default function ImageWithText( { blok }) {
                     {blok?.button && (
                         <div className="flex justify-center w-full">
                             <a 
-                                href={blok.button.url || '#'} 
+                                href={blok.link.url || '#'} 
                                 title={blok.button.title || 'Click here'} 
                                 rel={blok.button.rel || 'noopener noreferrer'}
                                 className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600"
