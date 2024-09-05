@@ -8,15 +8,15 @@ export default function ImageWithText( { blok }) {
                 <div className="flex flex-col items-start w-full md:w-1/2 space-y-4">
                     <h1 className="text-4xl font-bold text-black">{blok?.title || 'Default Title'}</h1>
                     <p className="text-lg text-black">{blok?.text || 'Default description text.'}</p>
-                    {blok?.button && (
-                        <div className="flex justify-center w-full">
+                    {blok?.link && (
+                        <div className="">
                             <a 
+                                key={blok.link.uid}
                                 href={blok.link.url || '#'} 
-                                title={blok.button.title || 'Click here'} 
-                                rel={blok.button.rel || 'noopener noreferrer'}
-                                className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600"
+                                title={blok.link.title || 'Click here'} 
+                                className="inline-block px-4 py-2 text-gray-800 rounded hover:text-black transition-transform transform hover:scale-105"
                             >
-                                {blok.button.title || 'Button'}
+                                {blok.link.title || 'Link'}
                             </a>
                         </div>
                     )}
