@@ -12,6 +12,7 @@ import Header from "@/components/nestable/Header";
 import Grid from "@/components/nestable/Grid";
 import ImageWithText from "@/components/nestable/ImageWithText";
 import Footer from "@/components/nestable/Footer";
+import About from "@/components/nestable/About";
 
 const components = {
   "page": Page,
@@ -21,7 +22,8 @@ const components = {
   "header": Header,
   "grid": Grid,
   "imageWithText": ImageWithText,
-  "footer": Footer
+  "footer": Footer,
+  "about": About
 }
 
 storyblokInit({
