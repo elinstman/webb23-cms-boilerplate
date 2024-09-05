@@ -26,6 +26,7 @@ export default async function NotFound() {
               {currentConfig.notFoundLink.title || "Go to Home"}
             </Link>
           </div>
+          //   för att deploya
         )}
       </div>
     </div>
